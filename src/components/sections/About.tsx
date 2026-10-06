@@ -248,7 +248,7 @@ export default function About() {
                       <span className="font-mono-tag text-[10px] font-bold tracking-widest uppercase text-[#a9a6a0]">
                         DEV PROFILES
                       </span>
-                      <span className="font-mono-tag text-[9px] font-bold text-emerald-400">
+                      <span className="font-mono-tag text-[9px] font-bold text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded border border-emerald-400/20">
                         GITHUB & LEETCODE
                       </span>
                     </div>
@@ -259,21 +259,21 @@ export default function About() {
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={(e) => e.stopPropagation()}
-                      className="bg-white/5 border border-white/10 hover:border-white/30 hover:bg-white/10 p-3 rounded-xl transition-all duration-300 group/gh block text-left"
+                      className="bg-white/5 border border-white/10 hover:border-white/40 hover:bg-white/10 p-3.5 rounded-xl transition-all duration-300 group/gh block text-left shadow-sm"
                     >
-                      <div className="flex items-center justify-between mb-1">
+                      <div className="flex items-center justify-between mb-1.5">
                         <div className="flex items-center gap-2">
-                          <TechLogo logoKey="github" size={20} className="invert" />
+                          <TechLogo logoKey="github" size={22} className="invert" />
                           <span className="font-display font-bold text-sm text-white">GitHub</span>
                         </div>
                         <span className="font-mono-tag text-[10px] font-bold text-[#a9a6a0] group-hover/gh:text-white transition-colors">
                           View Repos ↗
                         </span>
                       </div>
-                      <p className="font-mono-tag text-[10px] text-gray-300">
+                      <p className="font-mono-tag text-[11px] text-gray-300 font-semibold">
                         @{PROFILE.github.split("/").pop()}
                       </p>
-                      <div className="mt-2 flex flex-wrap gap-1">
+                      <div className="mt-2.5 flex flex-wrap gap-1">
                         <span className="text-[8px] font-mono-tag bg-white/10 px-2 py-0.5 rounded text-gray-300">Data Science</span>
                         <span className="text-[8px] font-mono-tag bg-white/10 px-2 py-0.5 rounded text-gray-300">AI & Web</span>
                         <span className="text-[8px] font-mono-tag bg-white/10 px-2 py-0.5 rounded text-gray-300">Open Source</span>
@@ -286,21 +286,21 @@ export default function About() {
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={(e) => e.stopPropagation()}
-                      className="bg-white/5 border border-white/10 hover:border-white/30 hover:bg-white/10 p-3 rounded-xl transition-all duration-300 group/lc block text-left"
+                      className="bg-white/5 border border-white/10 hover:border-amber-400/40 hover:bg-white/10 p-3.5 rounded-xl transition-all duration-300 group/lc block text-left shadow-sm"
                     >
-                      <div className="flex items-center justify-between mb-1">
+                      <div className="flex items-center justify-between mb-1.5">
                         <div className="flex items-center gap-2">
-                          <TechLogo logoKey="leetcode" size={20} />
+                          <TechLogo logoKey="leetcode" size={22} />
                           <span className="font-display font-bold text-sm text-white">LeetCode</span>
                         </div>
                         <span className="font-mono-tag text-[10px] font-bold text-amber-400 group-hover/lc:text-amber-300 transition-colors">
                           View Profile ↗
                         </span>
                       </div>
-                      <p className="font-mono-tag text-[10px] text-gray-300">
+                      <p className="font-mono-tag text-[11px] text-gray-300 font-semibold">
                         @{PROFILE.leetcode.split("/").filter(Boolean).pop()}
                       </p>
-                      <div className="mt-2 flex flex-wrap gap-1">
+                      <div className="mt-2.5 flex flex-wrap gap-1">
                         <span className="text-[8px] font-mono-tag bg-amber-400/15 text-amber-300 border border-amber-400/30 px-2 py-0.5 rounded">Python & SQL</span>
                         <span className="text-[8px] font-mono-tag bg-amber-400/15 text-amber-300 border border-amber-400/30 px-2 py-0.5 rounded">Data Structures</span>
                       </div>
