@@ -92,12 +92,12 @@ export default function Hero() {
       onClick={handleSectionClick}
       className="relative min-h-[100svh] w-full flex flex-col justify-between pt-24 pb-12 overflow-hidden bg-[#f4f2ee] cursor-pointer select-none"
     >
-      {/* Giant outlined ghost word behind person */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden -z-0">
+      {/* Giant outlined ghost word behind person (High Contrast) */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden z-0">
         <span
-          className="font-display text-[22vw] font-black leading-none text-transparent uppercase tracking-tighter opacity-15"
+          className="font-display text-[22vw] font-black leading-none text-[#0d0d0d]/5 uppercase tracking-tighter opacity-50 sm:opacity-60"
           style={{
-            WebkitTextStroke: "2px #0d0d0d",
+            WebkitTextStroke: "3px #0d0d0d",
           }}
         >
           {PROFILE.firstName}
