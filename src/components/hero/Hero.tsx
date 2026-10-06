@@ -92,10 +92,10 @@ export default function Hero() {
       onClick={handleSectionClick}
       className="relative min-h-[100svh] w-full flex flex-col justify-between pt-24 pb-12 overflow-hidden bg-[#f4f2ee] cursor-pointer select-none"
     >
-      {/* Giant outlined ghost word behind person */}
+      {/* Giant outlined ghost word behind person (High Contrast) */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden z-0">
         <span
-          className="font-display text-[22vw] font-black leading-none text-transparent uppercase tracking-tighter opacity-30 transition-opacity duration-300"
+          className="font-display text-[22vw] font-black leading-none text-[#0d0d0d]/5 uppercase tracking-tighter opacity-50 sm:opacity-60"
           style={{
             WebkitTextStroke: "3px #0d0d0d",
           }}
@@ -106,9 +106,9 @@ export default function Hero() {
 
       {/* Main Content Area */}
       <div className="section-container relative z-10 w-full flex-1 flex flex-col items-center justify-center my-auto">
-        {/* Video Wrapper (16:9 Widescreen Aspect Ratio) */}
-        <div className="relative w-full max-w-[960px] flex items-center justify-center mx-auto my-2">
-          <div className="relative w-full aspect-video flex items-center justify-center">
+        {/* Video Wrapper */}
+        <div className="relative w-full max-w-[768px] flex items-center justify-center">
+          <div className="relative w-full h-[62svh] md:h-[min(96svh,960px)] aspect-[768/960] flex items-center justify-center">
             <video
               ref={videoRef}
               muted
